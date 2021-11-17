@@ -11,9 +11,9 @@ require_once "server/dbconnect.php";
      $runsql = mysqli_query($conn,$name_search);
      $result = mysqli_num_rows($runsql);
     
-      if($result)
+      if($runsql && $result>0 ) // sql query true vaye ra tesko row data 0 vanda badhi vaye
      {
-             
+             //$name_pass contain whole user data
          $name_pass = mysqli_fetch_assoc($runsql);
 
          $fetched_pass = $name_pass["password"];
@@ -27,8 +27,10 @@ require_once "server/dbconnect.php";
         }
         else
         {
+            //return user data
+            return $name_pass;
             // echo "Passwords matched";
-           header("Location: mainpage.php");
+           header("Location: login.php");
           die;
 
         }
