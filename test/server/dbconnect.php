@@ -5,5 +5,3 @@ if(!$conn)
 {
     echo "Failed to connect to Mysql : ".mysqli_connect_error();
 }
-
-?>
