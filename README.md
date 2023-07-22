@@ -19,16 +19,19 @@ Objectives:
          <li>   iv).To build preparatory image for tourists of the places which/where they want to visit.</li> 
           </ul>
 
-Languages/Frameworks/API user:
-        PHP
+## Languages/Frameworks/API user:
+        PHP-7
         SQL
-        HTML 5 
-        CSS 3
+        HTML-5 
+        CSS-3
         JS
         Bootstrap
         JQuery
         OpenWeatherMapAPI
 
-Software:
+## Software:
         XAMPP as Server
         VS-CODE as Editor
+## License
+ [MIT](LICENSE)
+        
